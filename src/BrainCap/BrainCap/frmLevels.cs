@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BrainCap
 {
-    public partial class Form1 : Form
+    public partial class frmLevels : Form
     {
-        public Form1()
+        public frmLevels()
         {
             InitializeComponent();
         }
