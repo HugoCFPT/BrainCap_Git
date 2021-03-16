@@ -16,5 +16,12 @@ namespace BrainCap
         {
             InitializeComponent();
         }
+
+        private void btnAimTrainer_Click(object sender, EventArgs e)
+        {
+            var frmAimTrainer = new frmAimTrainer();
+            frmAimTrainer.Show();
+            this.Hide();
+        }
     }
 }
