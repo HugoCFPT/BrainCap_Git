@@ -23,5 +23,12 @@ namespace BrainCap
             frmAimTrainer.Show();
             this.Hide();
         }
+
+        private void btnReactionTime_Click(object sender, EventArgs e)
+        {
+            var frmReactionTime = new frmReactionTime();
+            frmReactionTime.Show();
+            this.Hide();
+        }
     }
 }
