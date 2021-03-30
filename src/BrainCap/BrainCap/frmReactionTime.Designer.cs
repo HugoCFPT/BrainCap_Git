@@ -40,11 +40,14 @@ namespace BrainCap
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.BackColor = System.Drawing.Color.Transparent;
-            this.lblResult.Location = new System.Drawing.Point(323, 169);
+            this.lblResult.Font = new System.Drawing.Font("Microsoft YaHei", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResult.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblResult.Location = new System.Drawing.Point(254, 171);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(28, 13);
+            this.lblResult.Size = new System.Drawing.Size(97, 46);
             this.lblResult.TabIndex = 0;
             this.lblResult.Text = "Text";
+            this.lblResult.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmReactionTime
             // 
@@ -57,6 +60,7 @@ namespace BrainCap
             this.Name = "frmReactionTime";
             this.Text = "Reaction Time";
             this.Click += new System.EventHandler(this.frmReactionTime_Click);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.frmReactionTime_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
