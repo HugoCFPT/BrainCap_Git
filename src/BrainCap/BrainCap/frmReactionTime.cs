@@ -17,12 +17,15 @@ namespace BrainCap
         private DateTime startReactionTime;
         private DateTime endReactionTime;
         private double elapseMilliseconds;
+     
+
 
         private int sequence;
         public frmReactionTime()
         {
             InitializeComponent();
             sequence = 0;
+            lblResult.Visible = false;
         }
 
         private void frmReactionTime_Click(object sender, EventArgs e)
@@ -49,6 +52,14 @@ namespace BrainCap
                         TimeSpan sp = endReactionTime - startReactionTime;
                         elapseMilliseconds = sp.TotalMilliseconds;
                         ++sequence;
+                        lblResult.Text = elapseMilliseconds.ToString();
+                        lblResult.Visible = true;
+                        break;
+                    }
+                case 3:
+
+                    {
+                 
                         break;
                     }
             }
@@ -61,10 +72,6 @@ namespace BrainCap
             Image myimage = new Bitmap(@"C:\Users\Administrateur\Documents\GitHub\BrainCap_Git\src\BrainCap\BrainCap\ressources\img\RTClick.png");
             this.BackgroundImage = myimage;
             startReactionTime = DateTime.Now;
-        }
-        private void frmReactionTime_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

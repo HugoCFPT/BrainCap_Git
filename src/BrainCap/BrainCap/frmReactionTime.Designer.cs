@@ -33,7 +33,18 @@ namespace BrainCap
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReactionTime));
             this.trmCalculator = new System.Windows.Forms.Timer(this.components);
             this.tmrRdm = new System.Windows.Forms.Timer(this.components);
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.BackColor = System.Drawing.Color.Transparent;
+            this.lblResult.Location = new System.Drawing.Point(323, 169);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(28, 13);
+            this.lblResult.TabIndex = 0;
+            this.lblResult.Text = "Text";
             // 
             // frmReactionTime
             // 
@@ -41,12 +52,13 @@ namespace BrainCap
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(698, 397);
+            this.Controls.Add(this.lblResult);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmReactionTime";
             this.Text = "Reaction Time";
-            this.Load += new System.EventHandler(this.frmReactionTime_Load);
             this.Click += new System.EventHandler(this.frmReactionTime_Click);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -54,5 +66,6 @@ namespace BrainCap
 
         private System.Windows.Forms.Timer trmCalculator;
         private System.Windows.Forms.Timer tmrRdm;
+        private System.Windows.Forms.Label lblResult;
     }
 }
