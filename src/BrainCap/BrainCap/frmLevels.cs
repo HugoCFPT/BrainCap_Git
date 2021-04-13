@@ -22,7 +22,7 @@ namespace BrainCap
             var frmAimTrainer = new frmAimTrainer();
             frmAimTrainer.Show();
             this.Hide();
-        }
+        } 
 
         private void btnReactionTime_Click(object sender, EventArgs e)
         {
@@ -30,5 +30,10 @@ namespace BrainCap
             frmReactionTime.Show();
             this.Hide();
         }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Work in progress !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
     }
 }
