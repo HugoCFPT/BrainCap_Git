@@ -94,7 +94,7 @@ namespace BrainCap
         {
             var FormLevels = new frmLevels();
             FormLevels.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void frmAimTrainer_Load(object sender, EventArgs e)

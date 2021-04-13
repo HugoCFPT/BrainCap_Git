@@ -69,6 +69,7 @@
             this.Name = "frmMainMenu";
             this.RightToLeftLayout = true;
             this.Text = "BrainCap";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMainMenu_FormClosing);
             this.ResumeLayout(false);
 
         }
