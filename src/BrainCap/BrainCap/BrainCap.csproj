@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmClickCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickCounter.Designer.cs">
+      <DependentUpon>frmClickCounter.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMemTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClickCounter.resx">
+      <DependentUpon>frmClickCounter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMemTest.resx">
       <DependentUpon>frmMemTest.cs</DependentUpon>
     </EmbeddedResource>

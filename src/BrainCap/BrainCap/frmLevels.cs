@@ -30,5 +30,12 @@ namespace BrainCap
             frmReactionTime.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frmClickCounter = new frmClickCounter();
+            frmClickCounter.Show();
+            this.Hide();
+        }
     }
 }

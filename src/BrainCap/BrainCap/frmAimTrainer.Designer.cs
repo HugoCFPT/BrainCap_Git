@@ -47,11 +47,15 @@
             this.lblNbCiblesRateesTxt = new System.Windows.Forms.Label();
             this.lblNbCiblesRateesInt = new System.Windows.Forms.Label();
             this.pnlStats = new System.Windows.Forms.Panel();
+            this.pnlScore = new System.Windows.Forms.Panel();
+            this.lblScoreTxt = new System.Windows.Forms.Label();
+            this.lblScoreInt = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.gbxTempsRestant.SuspendLayout();
             this.gbxNbCibles.SuspendLayout();
             this.gbxNbCiblesRatees.SuspendLayout();
             this.pnlStats.SuspendLayout();
+            this.pnlScore.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCible
@@ -172,6 +176,7 @@
             // lblNbCiblesTxt
             // 
             this.lblNbCiblesTxt.AutoSize = true;
+            this.lblNbCiblesTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.lblNbCiblesTxt.Location = new System.Drawing.Point(18, 24);
             this.lblNbCiblesTxt.Name = "lblNbCiblesTxt";
             this.lblNbCiblesTxt.Size = new System.Drawing.Size(91, 13);
@@ -200,6 +205,7 @@
             // lblNbCiblesRateesTxt
             // 
             this.lblNbCiblesRateesTxt.AutoSize = true;
+            this.lblNbCiblesRateesTxt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblNbCiblesRateesTxt.Location = new System.Drawing.Point(18, 24);
             this.lblNbCiblesRateesTxt.Name = "lblNbCiblesRateesTxt";
             this.lblNbCiblesRateesTxt.Size = new System.Drawing.Size(73, 13);
@@ -226,11 +232,43 @@
             this.pnlStats.TabIndex = 7;
             this.pnlStats.Visible = false;
             // 
+            // pnlScore
+            // 
+            this.pnlScore.Controls.Add(this.lblScoreInt);
+            this.pnlScore.Controls.Add(this.lblScoreTxt);
+            this.pnlScore.Location = new System.Drawing.Point(330, 280);
+            this.pnlScore.Name = "pnlScore";
+            this.pnlScore.Size = new System.Drawing.Size(486, 196);
+            this.pnlScore.TabIndex = 8;
+            this.pnlScore.Visible = false;
+            // 
+            // lblScoreTxt
+            // 
+            this.lblScoreTxt.AutoSize = true;
+            this.lblScoreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreTxt.Location = new System.Drawing.Point(17, 78);
+            this.lblScoreTxt.Name = "lblScoreTxt";
+            this.lblScoreTxt.Size = new System.Drawing.Size(317, 39);
+            this.lblScoreTxt.TabIndex = 0;
+            this.lblScoreTxt.Text = "Votre score est de :";
+            // 
+            // lblScoreInt
+            // 
+            this.lblScoreInt.AutoSize = true;
+            this.lblScoreInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreInt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblScoreInt.Location = new System.Drawing.Point(340, 78);
+            this.lblScoreInt.Name = "lblScoreInt";
+            this.lblScoreInt.Size = new System.Drawing.Size(150, 39);
+            this.lblScoreInt.TabIndex = 1;
+            this.lblScoreInt.Text = "un score";
+            // 
             // frmAimTrainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.pnlScore);
             this.Controls.Add(this.pnlStats);
             this.Controls.Add(this.btnCible);
             this.Controls.Add(this.btnRetour);
@@ -250,6 +288,8 @@
             this.gbxNbCiblesRatees.ResumeLayout(false);
             this.gbxNbCiblesRatees.PerformLayout();
             this.pnlStats.ResumeLayout(false);
+            this.pnlScore.ResumeLayout(false);
+            this.pnlScore.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,5 +316,8 @@
         private System.Windows.Forms.Label lblNbCiblesRateesTxt;
         private System.Windows.Forms.Label lblNbCiblesRateesInt;
         private System.Windows.Forms.Panel pnlStats;
+        private System.Windows.Forms.Panel pnlScore;
+        private System.Windows.Forms.Label lblScoreInt;
+        private System.Windows.Forms.Label lblScoreTxt;
     }
 }

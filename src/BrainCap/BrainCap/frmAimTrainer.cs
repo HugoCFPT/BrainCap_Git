@@ -14,16 +14,17 @@ namespace BrainCap
     {
         Random rand = new Random();
         Timer tmrDecompte = new Timer();
-        double timeLeft = 30.00;
+        int timeLeft = 30;
         int NbCibles = 0;
         int NbCiblesRatees = 0;
+        int ScoreTotal = 0;
 
         public frmAimTrainer()
         {
             InitializeComponent();
 
             //set properties for the Timer
-            tmrDecompte.Interval = 1;
+            tmrDecompte.Interval = 1000;
             tmrDecompte.Enabled = true;
 
             //Set the event handler for the timer, named "myTimer_Tick"
@@ -66,11 +67,16 @@ namespace BrainCap
         {
             //perform these actions at the interval set in the properties.
             lblDecompte.Text = timeLeft.ToString();
-            timeLeft -= 0.01;
+            timeLeft -= 1;
 
             if (timeLeft < 0)
             {
                 tmrDecompte.Stop();
+                btnCible.Hide();
+                pnlScore.Visible = true;
+                int ScoreTotal = NbCibles - NbCiblesRatees;
+                lblScoreInt.Text = ScoreTotal.ToString();
+                
             }
         }
 
