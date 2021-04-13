@@ -30,7 +30,7 @@ namespace BrainCap
             frmReactionTime.Show();
             this.Hide();
         }
-<<<<<<< HEAD
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -38,12 +38,12 @@ namespace BrainCap
             frmClickCounter.Show();
             this.Hide();
         }
-=======
+
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Work in progress !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
->>>>>>> Killian
+
     }
 }
