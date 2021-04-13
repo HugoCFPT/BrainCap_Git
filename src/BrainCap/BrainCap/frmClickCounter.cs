@@ -52,6 +52,7 @@ namespace BrainCap
                 tmrDecompte.Stop();
                 Score = Clics / 10;
                 lblScoreInt.Text = Score.ToString() + "c/s (" + Clics + " clics)";
+                btnClick.Visible = false;
             }
         }
         private void btnCommencer_Click(object sender, EventArgs e)
@@ -76,14 +77,9 @@ namespace BrainCap
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            Clics = 0;
-            timeLeft = 10;
-            lblScoreInt.Text = "0";
-            btnOk.Hide();
-            pnlScore.Visible = false;
-            btnCommencer.Show();
-            btnRetour.Show();
-            btnClick.Hide();
+            var FormClickCounter = new frmClickCounter();
+            FormClickCounter.Show();
+            this.Hide();
         }
 
         private void btnClick_Click(object sender, EventArgs e)

@@ -51,7 +51,7 @@ namespace BrainCap
             // 
             // btnCommencer
             // 
-            this.btnCommencer.Location = new System.Drawing.Point(364, 184);
+            this.btnCommencer.Location = new System.Drawing.Point(364, 178);
             this.btnCommencer.Name = "btnCommencer";
             this.btnCommencer.Size = new System.Drawing.Size(486, 181);
             this.btnCommencer.TabIndex = 2;
@@ -140,7 +140,7 @@ namespace BrainCap
             // 
             this.pnlScore.Controls.Add(this.lblScoreInt);
             this.pnlScore.Controls.Add(this.lblScoreTxt);
-            this.pnlScore.Location = new System.Drawing.Point(285, 365);
+            this.pnlScore.Location = new System.Drawing.Point(291, 282);
             this.pnlScore.Name = "pnlScore";
             this.pnlScore.Size = new System.Drawing.Size(631, 77);
             this.pnlScore.TabIndex = 9;
@@ -169,7 +169,7 @@ namespace BrainCap
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(364, 480);
+            this.btnOk.Location = new System.Drawing.Point(364, 365);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(486, 116);
             this.btnOk.TabIndex = 10;
