@@ -26,9 +26,21 @@ namespace BrainCap
 
         private void btnChallenge_Click(object sender, EventArgs e)
         {
-            var FormChallenge = new frmChallenge();
-            FormChallenge.Show();
-            this.Hide();
+            MessageBox.Show("Work in progress !", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void frmMainMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult fermer = MessageBox.Show("Voulez vous vraiment Quitter", "Quitter", MessageBoxButtons.YesNo);
+            if (fermer == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+              
+            }
+
         }
     }
 }
