@@ -29,6 +29,7 @@ namespace BrainCap
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmClickCounter));
             this.btnCommencer = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
             this.pnlStats = new System.Windows.Forms.Panel();
@@ -200,8 +201,9 @@ namespace BrainCap
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnCommencer);
             this.Controls.Add(this.btnClick);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmClickCounter";
-            this.Text = "frmClickCounter";
+            this.Text = "Click Counter";
             this.Click += new System.EventHandler(this.frmClickCounter_Click);
             this.pnlStats.ResumeLayout(false);
             this.gbxNbCibles.ResumeLayout(false);

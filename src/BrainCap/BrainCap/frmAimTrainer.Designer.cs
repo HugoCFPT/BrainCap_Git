@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAimTrainer));
             this.btnCible = new System.Windows.Forms.Button();
             this.btnCommencer = new System.Windows.Forms.Button();
             this.btnRetour = new System.Windows.Forms.Button();
@@ -48,8 +49,8 @@
             this.lblNbCiblesRateesInt = new System.Windows.Forms.Label();
             this.pnlStats = new System.Windows.Forms.Panel();
             this.pnlScore = new System.Windows.Forms.Panel();
-            this.lblScoreTxt = new System.Windows.Forms.Label();
             this.lblScoreInt = new System.Windows.Forms.Label();
+            this.lblScoreTxt = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.gbxTempsRestant.SuspendLayout();
             this.gbxNbCibles.SuspendLayout();
@@ -107,7 +108,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
             this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Text = "Aim Trainer ";
             // 
             // tsFichier
             // 
@@ -242,16 +243,6 @@
             this.pnlScore.TabIndex = 8;
             this.pnlScore.Visible = false;
             // 
-            // lblScoreTxt
-            // 
-            this.lblScoreTxt.AutoSize = true;
-            this.lblScoreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScoreTxt.Location = new System.Drawing.Point(17, 78);
-            this.lblScoreTxt.Name = "lblScoreTxt";
-            this.lblScoreTxt.Size = new System.Drawing.Size(317, 39);
-            this.lblScoreTxt.TabIndex = 0;
-            this.lblScoreTxt.Text = "Votre score est de :";
-            // 
             // lblScoreInt
             // 
             this.lblScoreInt.AutoSize = true;
@@ -262,6 +253,16 @@
             this.lblScoreInt.Size = new System.Drawing.Size(150, 39);
             this.lblScoreInt.TabIndex = 1;
             this.lblScoreInt.Text = "un score";
+            // 
+            // lblScoreTxt
+            // 
+            this.lblScoreTxt.AutoSize = true;
+            this.lblScoreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreTxt.Location = new System.Drawing.Point(17, 78);
+            this.lblScoreTxt.Name = "lblScoreTxt";
+            this.lblScoreTxt.Size = new System.Drawing.Size(317, 39);
+            this.lblScoreTxt.TabIndex = 0;
+            this.lblScoreTxt.Text = "Votre score est de :";
             // 
             // frmAimTrainer
             // 
@@ -274,9 +275,10 @@
             this.Controls.Add(this.btnRetour);
             this.Controls.Add(this.btnCommencer);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAimTrainer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAimTrainer";
+            this.Text = "Aim Trainer";
             this.Load += new System.EventHandler(this.frmAimTrainer_Load);
             this.Click += new System.EventHandler(this.frmAimTrainer_Click);
             this.menuStrip1.ResumeLayout(false);
